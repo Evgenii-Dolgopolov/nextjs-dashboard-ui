@@ -6,10 +6,10 @@ import {
   GridRowEditStopReasons,
   GridRowModes,
 } from "@mui/x-data-grid"
-import { DataColumns } from "./DataColumns.jsx"
-import { CustomToolbar } from "./CustomToolbar.jsx"
+import { DataColumns } from "./DataColumns"
+import CustomToolbar from "./CustomToolbar"
 import Typography from "@mui/material/Typography"
-import { UsersContext } from "@/context/UsersContext.js"
+import { UsersContext } from "@/context/UsersContext"
 
 const UserDataGrid = () => {
   const { users, setUsers } = useContext(UsersContext)

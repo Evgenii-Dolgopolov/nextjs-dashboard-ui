@@ -1,23 +1,23 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local"
-import "./globals.css"
+import "../styles/globals.css"
 import { Layout } from "@/components/index"
 import { UsersProvider } from "@/context/UsersProvider"
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../../public/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 })
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../../public/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 })
 
 export const metadata: Metadata = {
   title: "User dashboard UI",
-  description: "Next.js app",
+  description: "Next.js app for managing user data",
 }
 
 export default function RootLayout({
@@ -29,9 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Layout>
-          <UsersProvider>
-            {children}
-          </UsersProvider>
+          <UsersProvider>{children}</UsersProvider>
         </Layout>
       </body>
     </html>

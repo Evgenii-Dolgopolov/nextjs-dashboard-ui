@@ -3,7 +3,7 @@ import { BarChart } from "@mui/x-charts/BarChart"
 import { LineChart } from "@mui/x-charts/LineChart"
 import { PieChart } from "@mui/x-charts/PieChart"
 
-function Charts() {
+const Charts =() => {
   return (
     <div className="flex flex-col space-between justify-center m-auto">
       <h1 className="text-3xl text-gray-700 justify-center m-auto pt-2">Charts</h1>

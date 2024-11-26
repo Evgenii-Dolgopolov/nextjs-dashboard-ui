@@ -10,7 +10,7 @@ import {
 import { Button } from "@mui/material"
 import AddIcon from "@mui/icons-material/Add"
 
-export const CustomToolbar = ({ ...props }) => {
+const CustomToolbar = ({ ...props }) => {
   const router = useRouter()
 
   const handleClick = () => {
@@ -29,3 +29,5 @@ export const CustomToolbar = ({ ...props }) => {
     </GridToolbarContainer>
   )
 }
+
+export default CustomToolbar

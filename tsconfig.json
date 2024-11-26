@@ -6,6 +6,7 @@
       "@/lib/*": ["src/lib/*"],
       "@/app/*": ["src/app/*"],
       "@/context/*": ["src/context/*"],
+      "@/public/*": ["./public/*"],
     },
     "allowImportingTsExtensions": true,
     "target": "ES2017",
